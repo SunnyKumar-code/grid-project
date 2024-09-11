@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Baskervville:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Baskervville:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    background-origin: padding-box;
+}
+body{
+    min-height: 100vh;
+    color: #fff;
+    background-color: rgb(20 30 40);
+}
+main{
+    min-height: inherit;
+    max-width: 1000px;
+    margin: 0 auto;
+   
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    padding: 10px;
+}
+section{
+    
+    
+}
+.top-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        &>img{
+            width: 100%;
+            justify-self: center;
+        }
+        &>h1{
+            font-size: 4rem;
+            color: orangered;
+            font-family: "Anton", sans-serif;
+            text-align: center;
+           
+        }
+        &>p{
+            font-size: 1.5rem;
+            text-align: center;
+            color: orangered;
+            font-family: "Baskervville", serif;
+        }
+    }
+}
+.author{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Raleway", sans-serif;
+    .author-about{
+        &>h3{
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+        &>p{
+            font-size: 1.2rem;
+            color: gray;
+           
+        }
+    }
+    .author-social{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        font-size: 2.2rem;
+    }
+}
+.middle-section{
+    font-family: "Baskervville", serif;
+    column-width: 20rem;
+    color: linen;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    text-align: justify;
+    &>p{
+        margin: 0.5rem;
+    }
+    &>blockquote{
+        &>hr{
+            color: gray;
+        }
+        &>p{
+            margin: 20px 0;
+            color: #00beef;
+            font-size: 1.5rem;
+        }
+    }
+    .para1::first-letter{
+        float: left;
+        color: orangered;
+        font-size: 6rem;
+    }
+
+}
+.bottom-section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: "Raleway", sans-serif;
+    color: linen;
+    column-gap: 20px;
+
+    .brief-history {
+        & > h4,
+        h5 {
+          color: #00beef;
+          font-size: 1.5rem;
+        }
+    
+        & > ul {
+          margin-top: 2rem;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+    
+          & > li {
+            list-style: none;
+            & > h5 {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    
+      .img-history {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        & > img {
+          width: 100%;
+        }
+    
+        .para-3 {
+          align-self: center;
+          & > hr {
+            font-size: larger;
+            color: gray;
+          }
+          & > p {
+            margin: 0.5rem;
+            color: #00beef;
+            font-size: 2rem;
+            line-height: 3rem;
+          }
+          & > p::after {
+            content: '"';
+          }
+          & > p::before {
+            content: '"';
+          }
+        }
+    
+        .img-1 {
+          grid-column: 1 / -1;
+        }
+    
+        .img-3 {
+          grid-column: 1 / -1;
+        }
+      }
+    }
